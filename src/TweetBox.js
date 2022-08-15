@@ -7,7 +7,7 @@ function TweetBox() {
     <div className="tweetBox">
       <form>
         <div className="tweetBox_input">
-          <Avatar src="https://ih1.redbubble.net/image.1343394098.5639/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg"></Avatar>
+          <Avatar src="https://ih1.redbubble.net/image.1343394098.5639/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg" />
           <input placeholder="What's happening?" type="text"></input>
         </div>
         <input
