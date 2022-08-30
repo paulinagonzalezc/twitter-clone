@@ -2,7 +2,7 @@ import React from "react";
 import "./Widgets.css";
 import {
   TwitterTimelineEmbed,
-  TwitterTweetEmbed,
+  TwitterShareButton,
   TwitterTweetEmbed,
 } from "react-twitter-embed";
 import SearchIcon from "@mui/icons-material/Search";
@@ -17,6 +17,12 @@ function Widgets() {
 
       <div className="widgets_widgetContainer">
         <h2>What's happening</h2>
+        <TwitterTweetEmbed tweetId={""} />
+        <TwitterTimelineEmbed
+          sourceType="profile"
+          screenName="paulinagzzc"
+          options={{ height: 400 }}
+        />
       </div>
     </div>
   );
