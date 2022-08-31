@@ -11,27 +11,23 @@ function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post_avatar">
-        <Avatar src="https://ih1.redbubble.net/image.1343394098.5639/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post_body">
         <div className="post_header">
           <div className="post_headerText">
             <h3>
-              Paulina Gonzalez{" "}
+              {displayName}{" "}
               <span className="post_headerSpecial">
-                <VerifiedIcon className="post_badge" />
-                @paulinagzzc
+                {verified && <VerifiedIcon className="post_badge" />}@{username}
               </span>
             </h3>
           </div>
           <div className="post_headerDescription">
-            <p>I challenge you to build a Twitter Clone with React.js</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://thumbs.gfycat.com/PeacefulNecessaryGrasshopper-max-1mb.gif"
-          alt="gif"
-        />
+        <img src={image} alt="gif" />
         <div className="post_footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
